@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib | Persoonlijke Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">H<span>.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#over-mij" class="nav-link">Over Mij</a></li>
+                <li><a href="#vaardigheden" class="nav-link">Vaardigheden</a></li>
+                <li><a href="#lifestyle" class="nav-link">Lifestyle</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#cv" class="nav-link nav-btn">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hallo, ik ben</p>
+            <h1 class="hero-name">Habib</h1>
+            <p class="hero-title" id="typingText"></p>
+            <div class="hero-buttons">
+                <a href="#over-mij" class="btn btn-primary">Leer mij kennen</a>
+                <a href="#contact" class="btn btn-outline">Neem contact op</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>+
+                    <span class="stat-label">Projecten</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>+
+                    <span class="stat-label">Certificaten</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span>+
+                    <span class="stat-label">Jaren Ervaring</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="over-mij" class="section">
+        <div class="container">
+            <h2 class="section-title">Over <span>Mij</span></h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="about-avatar">
+                            <span>H</span>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Wie ben ik?</h3>
+                    <p>Ik ben Habib, een enthousiaste IT-student aan MBO Utrecht. 
+                       Ik heb een passie voor technologie en het oplossen van problemen. 
+                       Elke dag leer ik nieuwe vaardigheden en werk ik aan projecten 
+                       die mij helpen te groeien als IT-professional.</p>
+                    <p>Ik geloof dat technologie de wereld kan veranderen, en ik wil 
+                       daar mijn steentje aan bijdragen. Of het nu gaat om webontwikkeling, 
+                       systeembeheer of netwerken - ik ben altijd bereid om te leren.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Naam:</span>
+                            <span class="info-value">Habib</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">School:</span>
+                            <span class="info-value">MBO Utrecht</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Opleiding:</span>
+                            <span class="info-value">IT</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Locatie:</span>
+                            <span class="info-value">Utrecht, NL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vaardigheden" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Mijn <span>Vaardigheden</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Structuren en stylen van webpagina's met moderne technieken.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                            <path d="M9 3v18"></path>
+                            <path d="M15 3v18"></path>
+                            <path d="M3 9h18"></path>
+                            <path d="M3 15h18"></path>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interactieve en dynamische websites bouwen.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Netwerken</h3>
+                    <p>Netwerken configureren en beheren.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Systeembeheer</h3>
+                    <p>Windows Server en Linux beheren en configureren.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Troubleshooting</h3>
+                    <p>Problemen analyseren en efficiënt oplossen.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Samenwerking</h3>
+                    <p>Effectief werken in teamverband.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lifestyle" class="section">
+        <div class="container">
+            <h2 class="section-title">Mijn <span>Lifestyle</span></h2>
+            <div class="lifestyle-grid">
+                <div class="lifestyle-card">
+                    <div class="lifestyle-icon">&#127891;</div>
+                    <h3>Student</h3>
+                    <p>Altijd bezig met leren en nieuwe kennis opdoen. Elke dag een kans om te groeien.</p>
+                </div>
+                <div class="lifestyle-card">
+                    <div class="lifestyle-icon">&#128187;</div>
+                    <h3>Tech Lover</h3>
+                    <p>Altijd op de hoogte van de nieuwste technologieën en gadgets.</p>
+                </div>
+                <div class="lifestyle-card">
+                    <div class="lifestyle-icon">&#127793;</div>
+                    <h3>Gezond Leven</h3>
+                    <p>Balans vinden tussen studeren, bewegen en ontspannen.</p>
+                </div>
+                <div class="lifestyle-card">
+                    <div class="lifestyle-icon">&#128640;</div>
+                    <h3>Doelgericht</h3>
+                    <p>Met een duidelijke visie werken aan mijn toekomst in de IT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Mijn <span>Hobbies</span></h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#127918;</div>
+                    <h3>Gamen</h3>
+                    <p>Strategische games en competitive gaming</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#128241;</div>
+                    <h3>Tech Projects</h3>
+                    <p>Zelf projecten bouwen en experimenteren</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#127925;</div>
+                    <h3>Muziek</h3>
+                    <p>Luisteren naar verschillende genres</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#128694;</div>
+                    <h3>Sporten</h3>
+                    <p>Actief bezig zijn en fit blijven</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#128214;</div>
+                    <h3>Lezen</h3>
+                    <p>Technische artikelen en boeken</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-emoji">&#127760;</div>
+                    <h3>Reizen</h3>
+                    <p>Nieuwe culturen ontdekken</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Neem <span>Contact</span> Op</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Laten we praten!</h3>
+                    <p>Heb je een vraag of wil je samenwerken? Stuur me een bericht!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">habibhusaini10@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Locatie</span>
+                                <span class="contact-value">Utrecht, Nederland</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Telefoon</span>
+                                <span class="contact-value">+31 6 14646882</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Je Naam</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Je Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder=" " required>
+                        <label for="subject">Onderwerp</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Bericht</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Verstuur Bericht</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Mijn <span>CV</span></h2>
+            <div class="cv-grid">
+                <div class="cv-column">
+                    <h3 class="cv-heading">&#127891; Opleiding</h3>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2024 - Heden</span>
+                            <h4>MBO Utrecht</h4>
+                            <p>ICT Beheer</p>
+                            <p class="cv-desc">Leren over netwerken, systeembeheer, programmeren en IT-services.</p>
+                        </div>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2020 - 2024</span>
+                            <h4>VMBO</h4>
+                            <p> Basis- Kaderberoepsgerichte Leerweg</p>
+                            <p class="cv-desc">Algemene vorming met focus op techniek en wetenschap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-column">
+                    <h3 class="cv-heading">&#128188; Ervaring</h3>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2025 - Heden</span>
+                            <h4>Stage</h4>
+                            <p>IT Helpdesk</p>
+                            <p class="cv-desc">Ondersteuning bieden bij IT-problemen en systeembeheer taken uitvoeren.</p>
+                        </div>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2024</span>
+                            <h4>Schoolproject</h4>
+                            <p>Netwerk Configuratie</p>
+                            <p class="cv-desc">Een veilig netwerk opzetten voor een fictief bedrijf.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-column">
+                    <h3 class="cv-heading">&#127942; Certificaten</h3>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2025</span>
+                            <h4>Google IT Support</h4>
+                            <p>Professional Certificate</p>
+                            <p class="cv-desc">Basiskennis van IT-ondersteuning en probleemoplossing.</p>
+                        </div>
+                    </div>
+                    <div class="cv-item">
+                        <div class="cv-dot"></div>
+                        <div class="cv-content">
+                            <span class="cv-date">2025</span>
+                            <h4>Microsoft Azure</h4>
+                            <p>Fundamentals</p>
+                            <p class="cv-desc">Basisbegrip van cloud computing met Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cv-download">
+                <a href="#" class="btn btn-primary" id="downloadCV">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">H<span>.</span></a>
+                <p>&copy; 2026 Habib. Alle rechten voorbehouden.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Terug naar boven">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
