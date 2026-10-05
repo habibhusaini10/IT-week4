@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+    Portfolio pagina - Portfolio Habib
+    Toont (toekomstige) projecten in een responsive grid.
+    Alleen HTML + CSS, geen JavaScript.
+===================================================================== -->
+<html lang="nl">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio projecten van Habib">
+    <title>Habib | Portfolio - Mijn Projecten</title>
+
+    <!-- Koppeling naar de gedeelde stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- =================================================================
+        HEADER + NAVIGATIE
+        ================================================================= -->
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <span class="logo-mark">H</span>
+                <span class="logo-text">Habib</span>
+            </a>
+
+            <!-- Checkbox-hack voor het mobiele menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- "portfolio.html" is hier de actieve pagina -->
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">Over Mij</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =================================================================
+        PORTFOLIO SECTIE
+        Projecten die nog gebouwd worden krijgen een "Binnenkort"-label.
+        ================================================================= -->
+    <section class="section" style="padding-top: calc(var(--nav-height) + 30px);">
+        <div class="container">
+            <h2 class="section-title">Mijn <span class="highlight">Portfolio</span></h2>
+            <p class="section-subtitle">
+                Hier komen mijn projecten te staan. Ik werk nu aan schoolprojecten
+                en bouw dit overzicht steeds verder uit.
+            </p>
+
+            <!-- Grid met projectkaarten (past zich aan elk scherm aan) -->
+            <div class="portfolio-grid">
+
+                <!-- Project 1: Deze portfolio-website -->
+                <article class="project-card">
+                    <div class="project-icon">&#128187;</div>
+                    <h3>Persoonlijke portfolio</h3>
+                    <p>
+                        Deze website: een responsive portfolio gebouwd met alleen
+                        HTML en CSS, zonder JavaScript.
+                    </p>
+                    <span class="project-status">Binnenkort meer</span>
+                </article>
+
+                <!-- Project 2: Toekomstige webwinkel -->
+                <article class="project-card">
+                    <div class="project-icon">&#128722;</div>
+                    <h3>Webwinkel</h3>
+                    <p>
+                        Een voorbeeld-webwinkel met productcatalogus, winkelmandje
+                        en bestelproces. Idee voor een van de eerste grote projecten.
+                    </p>
+                    <span class="project-status">Binnenkort</span>
+                </article>
+
+                <!-- Project 3: Toekomstige privacy app -->
+                <article class="project-card">
+                    <div class="project-icon">&#128241;</div>
+                    <h3>Fotografie app</h3>
+                    <p>
+                        Een app-idee voor het ordenen en bewerken van reisfoto&rsquo;s.
+                        Combineert mijn hobby fotograferen met softwaredevelopment.
+                    </p>
+                    <span class="project-status">Binnenkort</span>
+                </article>
+
+                <!-- Project 4: Toekomstige reisblog -->
+                <article class="project-card">
+                    <div class="project-icon">&#9992;&#65039;</div>
+                    <h3>Reisblog</h3>
+                    <p>
+                        Een website waar ik reisverhalen, wandelroutes en video&rsquo;s
+                        van hikes deel. Koppelt reizen, filmen en webdevelopment.
+                    </p>
+                    <span class="project-status">Binnenkort</span>
+                </article>
+
+                <!-- Project 5: Toekomstig dashboard -->
+                <article class="project-card">
+                    <div class="project-icon">&#128200;</div>
+                    <h3>Studie-dashboard</h3>
+                    <p>
+                        Een dashboard dat cijfers en opdrachten van school overzichtelijk
+                        laat zien. Goede oefening in data tonen met HTML en CSS.
+                    </p>
+                    <span class="project-status">Binnenkort</span>
+                </article>
+
+                <!-- Project 6: Toekomstig teamportfolio -->
+                <article class="project-card">
+                    <div class="project-icon">&#129309;</div>
+                    <h3>Teamproject</h3>
+                    <p>
+                        Een gezamenlijk project met klasgenoten. Samen een complete
+                        website of app opleveren en daarbij leren samenwerken.
+                    </p>
+                    <span class="project-status">Binnenkort</span>
+                </article>
+            </div>
+
+            <!-- Verklaring over de status van de projecten -->
+            <p class="portfolio-note">
+                <strong>Tip:</strong> Bekijk deze pagina regelmatig opnieuw. Zodra
+                een project af is, komt het hier te staan met beschrijving en link.
+            </p>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        FOOTER met copyright-info
+        ================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span class="logo"><span class="logo-mark">H</span><span class="logo-text">Habib</span></span>. Alle rechten voorbehouden.</p>
+
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn">&#128100;</a>
+                <a href="#" aria-label="GitHub">&#128421;&#65039;</a>
+                <a href="#" aria-label="Instagram">&#128247;</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

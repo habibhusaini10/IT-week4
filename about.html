@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+    Over Mij pagina - Portfolio Habib
+    Informatie over studie, woonplaats en interesses/hobby's.
+    Alleen HTML + CSS, geen JavaScript.
+===================================================================== -->
+<html lang="nl">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Over Habib - studie, woonplaats en interesses">
+    <title>Habib | Portfolio - Over Mij</title>
+
+    <!-- Koppeling naar de gedeelde stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- =================================================================
+        HEADER + NAVIGATIE (zelfde structuur op elke pagina)
+        ================================================================= -->
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <span class="logo-mark">H</span>
+                <span class="logo-text">Habib</span>
+            </a>
+
+            <!-- Checkbox-hack voor het mobiele menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- "about.html" is hier de actieve pagina -->
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">Over Mij</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =================================================================
+        OVER MIJ SECTIE
+        Twee kolommen: profielkaart (monogram) + tekst en info-kaarten.
+        ================================================================= -->
+    <section class="section" style="padding-top: calc(var(--nav-height) + 30px);">
+        <div class="container">
+            <h2 class="section-title">Over <span class="highlight">Mij</span></h2>
+            <p class="section-subtitle">
+                Wie ik ben, wat ik studeer en waar mijn interesses liggen.
+            </p>
+
+            <div class="about-grid">
+
+                <!-- Profielkaart met monogram als plaatshouder voor een foto -->
+                <div class="profile-card">
+                    <div class="profile-initial">H</div>
+                    <h3>Habib</h3>
+                    <p>ICT Software Developer student</p>
+                </div>
+
+                <!-- Algemene tekst over mezelf -->
+                <div class="about-text">
+                    <h2>Een korte <span class="highlight">introductie</span></h2>
+                    <p>
+                        Mijn naam is Habib, ik ben 26 jaar oud en ik woon in Nieuwegein.
+                        Ik volg de opleiding <strong>ICT Software Developer</strong> aan
+                        mbo Utrecht. Het bouwen van websites en applicaties vind ik het
+                        leukste onderdeel van mijn studie, en ik ben elke dag bezig om
+                        daar beter in te worden.
+                    </p>
+                    <p>
+                        Ik houd van technologie en creativiteit. Die combinatie komt ook
+                        terug in mijn hobby&rsquo;s: ik reis graag, wandel veel en hike
+                        in de bergen. Onderweg fotografeer en film ik graag wat ik zie.
+                    </p>
+
+                    <!-- Info-kaarten over studie, woonplaats en interesses -->
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <div class="card-icon">&#127891;</div>
+                            <h4>Studie</h4>
+                            <p>ICT Software Developer aan MBO Utrecht</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">&#127968;</div>
+                            <h4>Woonplaats</h4>
+                            <p>Nieuwegein, in de buurt van Utrecht</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">&#128241;</div>
+                            <h4>Interesse</h4>
+                            <p>Webdevelopment, apps en moderne technologie</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="card-icon">&#127979;&#8205;&#65039;</div>
+                            <h4>Buitenlucht</h4>
+                            <p>Wandelen, hiken en de natuur ontdekken</p>
+                        </div>
+                    </div>
+
+                    <!-- Extra uitleg over hobby's -->
+                    <div class="hobby-note">
+                        <strong>Mijn hobby&rsquo;s:</strong> reizen &#9992;&#65039;,
+                        wandelen &#127793;, hiken in de bergen &#9968;&#65039;,
+                        fotograferen &#128247; en filmen &#127909;.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        FOOTER met copyright-info
+        ================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span class="logo"><span class="logo-mark">H</span><span class="logo-text">Habib</span></span>. Alle rechten voorbehouden.</p>
+
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn">&#128100;</a>
+                <a href="#" aria-label="GitHub">&#128421;&#65039;</a>
+                <a href="#" aria-label="Instagram">&#128247;</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

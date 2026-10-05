@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+    Contact pagina - Portfolio Habib
+    Contactgegevens + contactformulier.
+    Alleen HTML + CSS, geen JavaScript.
+===================================================================== -->
+<html lang="nl">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Habib">
+    <title>Habib | Portfolio - Contact</title>
+
+    <!-- Koppeling naar de gedeelde stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- =================================================================
+        HEADER + NAVIGATIE
+        ================================================================= -->
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <span class="logo-mark">H</span>
+                <span class="logo-text">Habib</span>
+            </a>
+
+            <!-- Checkbox-hack voor het mobiele menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- "contact.html" is hier de actieve pagina -->
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">Over Mij</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =================================================================
+        CONTACT SECTIE
+        Links de contactgegevens, rechts het contactformulier.
+        ================================================================= -->
+    <section class="section" style="padding-top: calc(var(--nav-height) + 30px);">
+        <div class="container">
+            <h2 class="section-title">Neem <span class="highlight">Contact</span> op</h2>
+            <p class="section-subtitle">
+                Heb je een vraag, idee of wil je samenwerken? Laat gerust een bericht achter.
+            </p>
+
+            <div class="contact-grid">
+
+                <!-- Contactgegevens -->
+                <div class="contact-info">
+                    <h3>Contactgegevens</h3>
+                    <p>Je kunt me bereiken via onderstaande kanalen.</p>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128231;</div>
+                        <div>
+                            <small>Email</small>
+                            <a href="mailto:habib@voorbeeld.nl">habibhusaini10@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Telefoon -->
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128222;</div>
+                        <div>
+                            <small>Telefoon</small>
+                            <a href="tel:+31612345678">+31 6 14646882</a>
+                        </div>
+                    </div>
+
+                    <!-- Adres -->
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128205;</div>
+                        <div>
+                            <small>Adres</small>
+                            <span>Nieuwegein, Nederland</span>
+                        </div>
+                    </div>
+
+                    <!-- Locatie -->
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128506;&#65039;</div>
+                        <div>
+                            <small>School</small>
+                            <span>MBO Utrecht</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contactformulier
+                     Zonder backend kan het formulier alleen naar een mailadres
+                     sturen of niets doen. Dit is puur de opmaak/oefening. -->
+                <form class="contact-form" action="mailto:habib@voorbeeld.nl" method="post" enctype="text/plain">
+                    <h3>Stuur een bericht</h3>
+                    <p>Vul het formulier in en ik neem zo snel mogelijk contact op.</p>
+
+                    <!-- Naam -->
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" placeholder="Vul je naam in" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">E-mailadres</label>
+                        <input type="email" id="email" name="email" placeholder="Vul je e-mailadres in" required>
+                    </div>
+
+                    <!-- Onderwerp -->
+                    <div class="form-group">
+                        <label for="subject">Onderwerp</label>
+                        <input type="text" id="subject" name="subject" placeholder="Waar gaat je bericht over?">
+                    </div>
+
+                    <!-- Bericht -->
+                    <div class="form-group">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" name="message" placeholder="Typ hier je bericht..." required></textarea>
+                    </div>
+
+                    <!-- Verzendknop -->
+                    <button type="submit" class="btn btn-primary">Bericht versturen &#8594;</button>
+
+                    <!-- Kleine toelichting over het formulier -->
+                    <p class="form-hint">
+                        * Dit formulier is een voorbeeld. Zodra er een server of
+                        e-mailservice is aangesloten, wordt het bericht echt verzonden.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        FOOTER met copyright-info
+        ================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span class="logo"><span class="logo-mark">H</span><span class="logo-text">Habib</span></span>. Alle rechten voorbehouden.</p>
+
+            <div class="socials">
+                <a href="#" aria-label="LinkedIn">&#128100;</a>
+                <a href="#" aria-label="GitHub">&#128421;&#65039;</a>
+                <a href="#" aria-label="Instagram">&#128247;</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
